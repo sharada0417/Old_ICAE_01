@@ -22,9 +22,10 @@ public class PostGraduate {
 	
 	@ManyToMany
 	@JoinTable(
-		name = "post_graduate_sessions",
-		joinColumns = @JoinColumn(name="postgraduates_id"),
-		inverseJoinColumns = @JoinColumn(name= "session_id")
+	    name = "postgraduate_sessions",
+	    joinColumns = @JoinColumn(name = "postgraduate_id"),
+	    inverseJoinColumns = @JoinColumn(name = "session_id")
 	)
-	private List<Session> session;
+	private List<Session> sessions;
+
 }
