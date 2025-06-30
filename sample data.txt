@@ -1,0 +1,103 @@
+INSERT INTO post_graduate (id, email, gender, name, phone, institute, research_interest, second_degree)
+VALUES
+    ('PG001', 'john.doe@example.com', 'Male', 'John Doe', 123456789, 'University A', 'Neuroscience', 'M.Sc.'),
+    ('PG002', 'jane.smith@example.com', 'Female', 'Jane Smith', 987654321, 'College B', 'Biomedical Eng.', 'M.Tech'),
+    ('PG003', 'mike.williams@example.com', 'Male', 'Mike Williams', 555123789, 'Institute X', 'Biochemistry', 'M.Sc.'),
+    ('PG004', 'emily.johnson@example.com', 'Female', 'Emily Johnson', 777555888, 'University Y', 'Molecular Biology', 'M.Sc.'),
+    ('PG005', 'david.brown@example.com', 'Male', 'David Brown', 444777333, 'School of Medicine', 'Immunology', 'M.D.'),
+    ('PG006', 'sarah.wang@example.com', 'Female', 'Sarah Wang', 222333444, 'College C', 'Genetics', 'M.Sc.'),
+    ('PG007', 'chris.nguyen@example.com', 'Male', 'Chris Nguyen', 666999111, 'University Z', 'Microbiology', 'M.Sc.'),
+    ('PG008', 'amy.garcia@example.com', 'Female', 'Amy Garcia', 111222333, 'Institute Y', 'Biotechnology', 'M.Tech'),
+    ('PG009', 'andrew.kim@example.com', 'Male', 'Andrew Kim', 888777666, 'School of Pharmacy', 'Pharmacology', 'Pharm.D'),
+    ('PG010', 'lisa.miller@example.com', 'Female', 'Lisa Miller', 999888777, 'College D', 'Bioinformatics', 'M.Tech');
+
+
+INSERT INTO post_graduate_sessions (post_graduates_id, sessions_id)
+VALUES
+    ('PG001', 'S001'),
+    ('PG001', 'S002'),
+    ('PG002', 'S003'),
+    ('PG002', 'S004'),
+    ('PG003', 'S002'),
+    ('PG004', 'S005'),
+    ('PG005', 'S001'),
+    ('PG005', 'S003'),
+    ('PG006', 'S006'),
+    ('PG006', 'S002');
+
+
+INSERT INTO presenter (id, email, gender, name, phone, affiliation, country, job_title)
+VALUES
+    ('PR001', 'alex.turner@example.com', 'Male', 'Alex Turner', 111222333, 'University A', 'USA', 'Professor'),
+    ('PR002', 'emily.martinez@example.com', 'Female', 'Emily Martinez', 444555666, 'Institute X', 'Canada', 'Researcher'),
+    ('PR003', 'benjamin.clark@example.com', 'Male', 'Benjamin Clark', 777888999, 'College B', 'UK', 'Assistant Professor'),
+    ('PR004', 'olivia.jenkins@example.com', 'Female', 'Olivia Jenkins', 222333444, 'School of Medicine', 'Australia', 'Doctor'),
+    ('PR005', 'ethan.rodriguez@example.com', 'Male', 'Ethan Rodriguez', 555666777, 'University Z', 'USA', 'Scientist'),
+    ('PR006', 'sophia.lewis@example.com', 'Female', 'Sophia Lewis', 888999000, 'Institute Y', 'Germany', 'Research Associate'),
+    ('PR007', 'lucas.scott@example.com', 'Male', 'Lucas Scott', 333444555, 'College C', 'France', 'Lecturer'),
+    ('PR008', 'chloe.white@example.com', 'Female', 'Chloe White', 666777888, 'University Y', 'USA', 'Professor'),
+    ('PR009', 'daniel.adams@example.com', 'Male', 'Daniel Adams', 999000111, 'Institute Z', 'Australia', 'Researcher'),
+    ('PR010', 'mia.green@example.com', 'Female', 'Mia Green', 777888666, 'School of Pharmacy', 'Canada', 'Doctor');
+
+
+INSERT INTO presenter_sessions (presenters_id, sessions_id)
+VALUES
+    ('PR001', 'S001'),
+    ('PR001', 'S002'),
+    ('PR002', 'S003'),
+    ('PR002', 'S004'),
+    ('PR003', 'S001'),
+    ('PR004', 'S005'),
+    ('PR005', 'S003'),
+    ('PR005', 'S006'),
+    ('PR006', 'S007'),
+    ('PR006', 'S002');
+
+
+INSERT INTO session (id, date, description, name, time, workshop_id)
+VALUES
+    ('S001', '2023-08-01', 'Introduction to Neuroscience', 'Neuro Basics', '09:00:00', 101),
+    ('S002', '2023-08-02', 'Advances in Biochemistry', 'Biochem Frontiers', '14:30:00', 102),
+    ('S003', '2023-08-03', 'Genetics and You', 'Genomic Insights', '11:45:00', 103),
+    ('S004', '2023-08-04', 'Immunology Workshop', 'ImmunoTech', '10:15:00', 101),
+    ('S005', '2023-08-05', 'Molecular Biology Lecture', 'MolBio Overview', '16:00:00', 104),
+    ('S006', '2023-08-06', 'Workshop on Pharmacology', 'PharmaConnect', '13:00:00', 102),
+    ('S007', '2023-08-07', 'Microbiology Fundamentals', 'Micro World', '09:30:00', 103),
+    ('S008', '2023-08-08', 'Biotechnology Innovations', 'BioTech Trends', '11:00:00', 101),
+    ('S009', '2023-08-09', 'Bioinformatics Basics', 'BioInfo101', '10:45:00', 104),
+    ('S010', '2023-08-10', 'Workshop on Genetics', 'GenoLab', '15:30:00', 103);
+
+INSERT INTO under_graduate (id, email, gender, name, phone, degree, university)
+VALUES
+    ('UG001', 'mark.anderson@example.com', 'Male', 'Mark Anderson', 1234567890, 'Bachelor of Science', 'University A'),
+    ('UG002', 'lily.johnson@example.com', 'Female', 'Lily Johnson', 1176543210, 'B.Sc. (Hons)', 'College B'),
+    ('UG003', 'sam.williams@example.com', 'Male', 'Sam Williams', 555123789, 'Biotechnology', 'Institute X'),
+    ('UG004', 'mia.smith@example.com', 'Female', 'Mia Smith', 777555888, 'Genetics', 'University Y'),
+    ('UG005', 'ethan.jones@example.com', 'Male', 'Ethan Jones', 444777333, 'Microbiology', 'School of Medicine'),
+    ('UG006', 'emma.nguyen@example.com', 'Female', 'Emma Nguyen', 222333444, 'Biochemistry', 'College C'),
+    ('UG007', 'oliver.brown@example.com', 'Male', 'Oliver Brown', 666999111, 'Bachelor of Medicine', 'University Z'),
+    ('UG008', 'ava.garcia@example.com', 'Female', 'Ava Garcia', 111222333, 'Biomedical Eng.', 'Institute Y'),
+    ('UG009', 'noah.lee@example.com', 'Male', 'Noah Lee', 888777666, 'Bachelor of Arts', 'School of Arts'),
+    ('UG010', 'sophia.miller@example.com', 'Female', 'Sophia Miller', 126888777, 'Neuroscience', 'College D');
+
+INSERT INTO under_graduate_sessions (under_graduates_id, sessions_id)
+VALUES
+    ('UG001', 'S001'),
+    ('UG001', 'S003'),
+    ('UG002', 'S002'),
+    ('UG002', 'S004'),
+    ('UG003', 'S003'),
+    ('UG004', 'S005'),
+    ('UG005', 'S001'),
+    ('UG006', 'S002'),
+    ('UG006', 'S006'),
+    ('UG007', 'S003');
+
+INSERT INTO workshop (id, description, end_date, name, start_date)
+VALUES
+    (101, 'A comprehensive workshop on Neurobiology', '2023-08-05', 'NeuroWorld', '2023-08-01'),
+    (102, 'Cutting-edge Biotechnology Innovations', '2023-08-08', 'BioTechAdvance', '2023-08-03'),
+    (103, 'Exploring Genetics and Molecular Biology', '2023-08-10', 'GenoMolBio', '2023-08-06'),
+    (104, 'Bioinformatics and Computational Biology', '2023-08-12', 'BioInfoComp', '2023-08-09'),
+    (105, 'Pharmacology Workshop', '2023-08-14', 'PharmaInnovate', '2023-08-11');
+
