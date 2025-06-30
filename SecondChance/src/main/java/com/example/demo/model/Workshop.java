@@ -1,5 +1,11 @@
 package com.example.demo.model;
 
-public class Workshop {
+import java.time.LocalDate;
 
+public class Workshop {
+	private Long id;
+	private String name;
+	private String description;
+	private LocalDate startDate;
+	private LocalDate endDate;
 }
